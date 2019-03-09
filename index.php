@@ -55,7 +55,7 @@ $user_name = 'Анна';
             <!--заполните этот список из массива категорий-->
 			<?php $categories = ["Доски и лыжи", "Крепления", "Ботинки", "Одежда", "Инструменты", "Разное"];
              $index = 0;
-             $num_count = count[$categories];
+             $num_count = count($categories);
 			 ?>
             <li class="promo__item promo__item--boards">
 			 <?php while($index < $num_count): ?>
@@ -143,7 +143,7 @@ $user_name = 'Анна';
             <li class="nav__item">
 			<?php while($index < $num_count): 
 			 $index = 0;
-             $num_count = count[$categories]; ?>
+             $num_count = count($categories); ?>
                 <a href="pages/all-lots.html=<?=$index;?>"><?=$categories[$index];?></a>
 				<?php $index = $index + 1; ?>
 			 <?php endwhile; ?>
